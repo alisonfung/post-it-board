@@ -3,6 +3,29 @@ body {
     font-family: "Alumni Sans", sans-serif;   
 }
 
+.top-header {
+    display: flex;
+    background-color: #C6D9DE;
+    color: black;
+    padding: 20px 40px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/* Adds a small space between "Home" and "Board" */
+.top-header span {
+    margin-right: 80px;
+}
+
+.top-header .board-link {
+    color: black;
+    text-decoration: none;
+}
+
+.top-header .board-link:hover {
+    text-decoration: underline;
+}
+
 .welcome-to {
     text-align: center;
     color:#6F6565;
