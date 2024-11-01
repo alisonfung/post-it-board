@@ -1,0 +1,65 @@
+body {
+    background-color: #EBEAEA;
+    font-family: "Alumni Sans", sans-serif;   
+}
+
+.top-header {
+    display: flex;
+    background-color: #C6D9DE;
+    color: black;
+    padding: 20px 40px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/* Adds a small space between "Home" and "Board" */
+.top-header span {
+    margin-right: 80px;
+}
+
+.top-header .board-link {
+    color: black;
+    text-decoration: none;
+}
+
+.top-header .board-link:hover {
+    text-decoration: underline;
+}
+
+.welcome-to {
+    text-align: center;
+    color:#6F6565;
+    font-size: 80px;
+    font-weight: 300; 
+    margin-bottom: 0px;          ;
+}
+
+.post-it {
+    text-align: center;
+    color: #6F6565;
+    font-size: 200px;
+    margin-top: 0px;
+    margin-bottom: 10px; 
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.circle {
+    background-color: #C6D9DE;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    font-size: 45px;
+    font-weight: 450;
+    text-align: center;
+}
