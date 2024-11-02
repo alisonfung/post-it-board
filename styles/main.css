@@ -63,3 +63,29 @@ body {
     font-weight: 450;
     text-align: center;
 }
+
+/* Post-it Board Styles for board.html */
+/* Container for Post-its */
+.post-it-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* Post-it Note Style */
+.post-it-note {
+    width: 180px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
