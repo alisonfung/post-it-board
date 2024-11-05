@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post-it Board</title>
-    <link rel="stylesheet" href="styles/main.css"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-it Board</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header with navigation links -->
-    <header class="top-header">
-        <a href="home.html" class="nav-link">Home</a>
-        <a href="board.html" class="nav-link">Board</a>
-    </header>
-
-    <!-- Welcome Section -->
-    <section class="welcome-section">
-        <h1>Welcome to the Post-it Board</h1>
-        <p>Keep track of deadlines, important events, and stay organized</p>
-    </section>
-
-    <!-- Main content section with post-it notes -->
-    <main class="post-it-container">
-        <div class="post-it-note" style="background-color: #FFEB3B;">Math: Study for midterm!</div>
-        <div class="post-it-note" style="background-color: #FFAB40;">English: Write essay, revise</div>
-        <div class="post-it-note" style="background-color: #4CAF50; color: #fff;">sheCodes meeting Thursday!</div>
-        <div class="post-it-note" style="background-color: #2196F3; color: #fff;">Math test 10/30!</div>
-    </main>
-
-    <!-- Buttons for adding and editing notes -->
-    <div class="button-container">
-        <button class="add-note-btn">+</button>
-        <button class="edit-note-btn">✏️</button>
+  <header class="board-page-header">
+    <a href="index.html" class="home-link">Home</a>
+    <span>Board</span>
+  </header>
+  
+  <div class="corkboard">
+    <div class="todo-box">
+      <h2 class="todo-title">To do:</h2>
     </div>
+    
+    <div class="post-it-container">
+      <div class="post-it pink">Math: Study for midterm!</div>
+      <div class="post-it green">English: Write essay and revise</div>
+      <div class="post-it yellow">sheCodes meeting on Thursday!</div>
+      <div class="post-it blue">Math test 10/30!</div>
+    </div>
+  </div>
 </body>
+<script src="scripts/app.js"></script>
+<noscript>You need to enable JavaScript to view the full site.</noscript>
 </html>
-
