@@ -1,6 +1,6 @@
 body {
     background-color: #EBEAEA;
-    font-family: "Alumni Sans", sans-serif;   
+    font-family: "Alumni Sans", sans-serif;
 }
 
 .top-header {
@@ -29,7 +29,7 @@ body {
     text-align: center;
     color: #6F6565;
     font-size: 80px;
-    font-weight: 300; 
+    font-weight: 300;
     margin-bottom: 0px;
 }
 
@@ -38,7 +38,7 @@ body {
     color: #6F6565;
     font-size: 200px;
     margin-top: 0px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .circle-container {
@@ -65,42 +65,62 @@ body {
 
 .board-page-header {
     display: flex;
-    background-color: #C6D9DE;
-    color: black;
+    background-color: transparent;
+    color: white;
     padding: 20px 40px;
     font-size: 50px;
     font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.board-page-header .home-link {
-    margin-right: 100px; 
-    text-decoration: none;
-    color: black;
-}
-
+.board-page-header .home-link,
 .board-page-header .board-link {
+    margin-right: 100px;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 .corkboard {
     background-image: url('https://images.pexels.com/photos/5988420/pexels-photo-5988420.jpeg');
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     padding: 50px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 100px;
 }
 
 .todo-box {
-    background-color: #D4C4A8; 
+    background-color: #DDCEA0;
     padding: 20px;
     width: 90%;
     text-align: center;
     margin-bottom: 30px;
-    border-radius: 5px; 
+    border-radius: 5px;
+    align-self: center;
 }
 
 .todo-title {
@@ -108,6 +128,7 @@ body {
     color: #000000;
     margin: 0;
     font-weight: 300;
+    text-align: center;
 }
 
 .welcome-section {
@@ -133,14 +154,14 @@ body {
 
 .post-it-container {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .post-it {
     width: 200px;
-    height: 150px;
+    height: 200px;
     padding: 10px;
     color: black;
     font-size: 20px;
@@ -167,4 +188,24 @@ body {
 
 .post-it.blue {
     background-color: #AEDFF7;
+}
+
+.post-it.large-rect {
+    width: 200px;
+    height: 150px;
+    background-color: #FDE4CF;
+}
+
+.post-it.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #D9EAD3;
+}
+
+.post-it.star {
+    width: 290px;
+    height: 290px;
+    background-color: #F4CCCC;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
