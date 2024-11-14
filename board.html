@@ -29,7 +29,20 @@
       <div class="post-it large-rect">Project plan review!</div>
       <div class="post-it circle">Birthday reminder!</div>
       <div class="post-it star">student event!</div>
-    </div>
+      
+      <!-- overlay -->
+      <button id="openOverlayButton" class="open-overlay-btn">+</button>
+
+      <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <span id="closeOverlayButton" class="close">&times;</span>
+        <h2>Design your post-it</h2>
+        <p>This is some content inside overlay.</p>
+        <button id="closeOverlayButtonInside" class="close-overlay-btn">Done!</button>
+      </div>
+      </div>
+  </div>
+  
   </div>
 </body>
 <script src="scripts/app.js"></script>
