@@ -13,6 +13,7 @@ function get_postit_fields(){
 }
 
 function add_postit(postit){
+    const postit = get_postit_fields()
     // add postit to the dom using postit.id, postit.text, postit.color
 }
 
