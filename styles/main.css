@@ -175,26 +175,21 @@ html, body {
 }
 
 .post-it.pink {
-    background-color: #FFC1C1;
+    background-color: #E7B5BA;
 }
 
 .post-it.green {
-    background-color: #C6E6B4;
+    background-color: #BAE7B5;
 }
 
-.post-it.yellow {
-    background-color: #FFF5BA;
+.post-it.orange {
+    background-color: #FCD99D;
 }
 
 .post-it.blue {
-    background-color: #AEDFF7;
+    background-color: #C6D9DE;
 }
 
-.post-it.large-rect {
-    width: 200px;
-    height: 150px;
-    background-color: #FDE4CF;
-}
 
 .post-it.circle {
     width: 230px;
@@ -229,6 +224,7 @@ html, body {
 }
 
 .overlay{
+    font-family: "Alumni Sans", sans-serif;
     position: fixed;
     display: none;
     top: 0;
@@ -240,6 +236,8 @@ html, body {
 }
 
 .overlay-content {
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 35px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -253,12 +251,74 @@ html, body {
     border-radius: 8px;
 }
 
-.close-overlay-btn {
+.overlay-close-btn {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    font-weight: bold;
+    top: 5vh;
+    right: 5vw;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+}
+.color-btn {
+    width: 40px;
+    height: 40px;
+    top: 10vh;
+    right: 10vw;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.color-btn:hover{
+    opacity: 0.7;
+}
+
+#postIt {
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+    transform: translate(-25%, -25%);
+    width: 40vw; 
+    height: 40vw;
+    max-width: 400px; /* max width for bigger screens */
+    max-height: 400px; /* max height for bigger screens */
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* make sure the textarea fills the post-it */
+#postIt textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    resize: none;
+    outline: none;
+}
+
+.done-btn {
+    background-color: #C6D9DE;
+    font-family: "Alumni Sans", sans-serif;
+    color: black;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 12px;
+    top: 70vh;
+    left: 27vw;
+    position: absolute;
+    transform: translateY(-20%); 
+    font-size: 28px;
     cursor: pointer;
     z-index: 1001;
 }
