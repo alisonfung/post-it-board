@@ -261,6 +261,12 @@ html, body {
     color: black;
     cursor: pointer;
 }
+
+.color-btn-container {
+    position: relative;
+    top: 25vh;
+    left: 15lvw;
+}
 .color-btn {
     width: 40px;
     height: 40px;
