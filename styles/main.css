@@ -157,6 +157,7 @@ html, body {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .post-it {
