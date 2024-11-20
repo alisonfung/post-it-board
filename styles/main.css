@@ -39,6 +39,18 @@ body {
     font-size: 200px;
     margin-top: 0px;
     margin-bottom: 10px;
+    position: relative; 
+}
+
+.checkbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .circle-container {
@@ -197,6 +209,21 @@ html, body {
     height: 230px;
     border-radius: 50%;
     background-color: #D9EAD3;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.post-it.circle .checkbox {
+    position: absolute;
+    top: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .post-it.star {
@@ -204,6 +231,21 @@ html, body {
     height: 290px;
     background-color: #F4CCCC;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: relative; 
+    overflow: hidden; 
+}
+
+.post-it.star .checkbox {
+    position: absolute;
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10; 
 }
 
 .open-overlay-btn {
