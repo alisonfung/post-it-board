@@ -52,6 +52,21 @@ function addPostIt(postIt) {
         openOverlay(postIt.id);
     });
 
+    // add a checkbox div for removal
+    const checkboxDiv = document.createElement('div');
+    checkboxDiv.className = 'checkbox';
+    checkboxDiv.title = 'Remove Post-it';
+
+    // add event listener to remove post-it on checkbox click
+    checkboxDiv.addEventListener('click', function(event) {
+        //prevent the event from reaching the post-it
+        event.stopPropagation();
+        removePostIt(this);
+    });
+
+    // add checkbox and text to post-it element
+    postItElement.appendChild(checkboxDiv);
+
     // add post-it to container
     postItContainer.appendChild(postItElement);
 }
@@ -73,8 +88,12 @@ function savePostIt() {
         // update post-it DOM element
         const postItElement = document.querySelector(`.post-it[data-id='${currentId}']`);
         if (postItElement) {
+            const checkboxDiv = postItElement.querySelector('.checkbox');
+
             postItElement.innerText = postIt.text;
             postItElement.className = `post-it ${postIt.color}`;
+
+            postItElement.appendChild(checkboxDiv);
         }
     } else {
         // creating a new post-it
