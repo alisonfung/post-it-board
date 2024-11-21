@@ -175,5 +175,6 @@ function removePostIt(checkbox) {
     setTimeout(() => {
         postIt.remove(); 
     }, 300); 
+
 }
 

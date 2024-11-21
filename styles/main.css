@@ -185,6 +185,8 @@ html, body {
     text-align: center;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .post-it.pink {
@@ -355,6 +357,7 @@ html, body {
     text-align: center;
     resize: none;
     outline: none;
+    overflow: auto;
 }
 
 .done-btn {
