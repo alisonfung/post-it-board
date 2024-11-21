@@ -334,7 +334,8 @@ html, body {
     left: 15vw;
     transform: translate(-25%, -25%);
     width: 40vw; 
-    height: 40vw;
+    height: 40vh;
+    padding-top: 40vw;
     max-width: 400px; /* max width for bigger screens */
     max-height: 400px; /* max height for bigger screens */
     padding: 1em;
