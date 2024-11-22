@@ -375,3 +375,16 @@ html, body {
     cursor: pointer;
     z-index: 1001;
 }
+
+.edit-overlay-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

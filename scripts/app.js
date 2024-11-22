@@ -47,10 +47,18 @@ function addPostIt(postIt) {
     postItElement.dataset.id = postIt.id;
     postItElement.innerText = postIt.text;
 
+    // add edit button to bottom right of post-it
+    const editButton = document.createElement('button');
+    editButton.className = 'edit-overlay-btn';
+    editButton.innerHTML = '&#9998;';
+
     // add click event to open overlay to edit
-    postItElement.addEventListener('click', function () {
+    editButton.addEventListener('click', function(event){
+        event.stopPropagation();
         openOverlay(postIt.id);
     });
+
+    postItElement.appendChild(editButton);
 
     // add a checkbox div for removal
     const checkboxDiv = document.createElement('div');
@@ -88,11 +96,13 @@ function savePostIt() {
         // update post-it DOM element
         const postItElement = document.querySelector(`.post-it[data-id='${currentId}']`);
         if (postItElement) {
+            const editButton = postItElement.querySelector('.edit-overlay-btn');
             const checkboxDiv = postItElement.querySelector('.checkbox');
 
             postItElement.innerText = postIt.text;
             postItElement.className = `post-it ${postIt.color}`;
 
+            postItElement.appendChild(editButton);
             postItElement.appendChild(checkboxDiv);
         }
     } else {
