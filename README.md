@@ -3,12 +3,16 @@
 
 https://github.com/user-attachments/assets/777ddadf-9b0a-4e06-aed4-30446e2dad2a
 
-## Project Description:
+## Project Description
 This project was for the CPP shecodes Semester Long Project--Intro To Coding (UI/UX) Team. 
 It features a virtual post-it board that keeps track of the user's events and due-dates. 
 
 ## Members
-Alison Fung (Team Lead), Sarah Huynh, Tina Arezoomanians, Elijah Harnanto, Sayumi Amarasinghe
+- Alison Fung **(Team Lead)**
+- Sarah Huynh
+- Tina Arezoomanians
+- Elijah Harnanto
+- Sayumi Amarasinghe
 
 ## Features
 - **Home Page**: includes short description of the website's purpose
