@@ -1,7 +1,11 @@
 # Virtual post-it board!
 
 
-https://github.com/user-attachments/assets/777ddadf-9b0a-4e06-aed4-30446e2dad2a
+
+
+https://github.com/user-attachments/assets/f6ffdb0b-4489-47cf-9535-5047d270226e
+
+
 
 ## Project Description
 This project was for the CPP shecodes Semester Long Project--Intro To Coding (UI/UX) Team. 
